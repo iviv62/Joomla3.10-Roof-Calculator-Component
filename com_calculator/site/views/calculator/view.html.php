@@ -32,7 +32,7 @@ class CalculatorViewCalculator extends JViewLegacy
 
 		// Create buttons
         $this->buttons = array(
-            $this->createButton('Calculator 1', 'index.php?option=com_calculator&view=view1'),
+            $this->createButton('Shed roof calculator', 'index.php?option=com_calculator&view=shedroofcalculator'),
             $this->createButton('Calculator 2', 'index.php?option=com_calculator&view=view2'),
             $this->createButton('Calculator 3', 'index.php?option=com_calculator&view=view3')
         );

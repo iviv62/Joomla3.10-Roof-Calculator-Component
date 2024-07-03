@@ -19,7 +19,7 @@
 	<files folder="site">
 		<filename>index.html</filename>
 		<filename>calculator.php</filename>
-		<filename>controller.php</filename>
+		<folder>controllers</folder>
 		<folder>views</folder>
 	</files>
 
