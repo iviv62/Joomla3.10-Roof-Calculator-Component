@@ -5,23 +5,23 @@ defined('_JEXEC') or die;
 
 
 <div class="form-container">
-    <h2>This is View for shed roof calculator</h2>
-    <h3 class="form-title">Your roof dimensions:</h3>
+    <h2>Това е калкулатор за едноскатен покрив</h2>
+    <h3 class="form-title">Размери на вашия покрив:</h3>
     <form id="roof-dimensions-form"  action="javascript:void(0);" >
         <div class="input-group">
             <label for="length">L</label>
-            <input type="text" id="length" name="length" placeholder="20">
+            <input type="number" id="length" name="length" placeholder="20">
         </div>
         <div class="input-group">
             <label for="width">I</label>
-            <input type="text" id="width" name="width" placeholder="8">
+            <input type="number" id="width" name="width" placeholder="8">
         </div>
         <div class="input-group">
             <label for="height">H</label>
-            <input type="text" id="height" name="height" placeholder="3">
+            <input type="number" id="height" name="height" placeholder="3">
         </div>
         <br>
-        <button type="submit" class="calculate-btn">Calculate</button>
+        <button type="submit" class="calculate-btn">Изчисли</button>
         <?php echo JHtml::_('form.token'); ?>
     </form>
 
@@ -29,10 +29,10 @@ defined('_JEXEC') or die;
 
     <div class="info-container">
         <ul>
-            <li><span class="info-highlight">L</span> is the length of the roof</li>
-            <li><span class="info-highlight">I</span> is the width of the roof</li>
-            <li><span class="info-highlight">H</span> is the rise (height) of the roof</li>
-            <li>For decimal dimensions, use the dot notation! (.)</li>
+            <li><span class="info-highlight">L</span> е дължината на покрива</li>
+            <li><span class="info-highlight">I</span> е ширината на покрива</li>
+            <li><span class="info-highlight">H</span> е височината на покрива</li>
+            <li>За десетични размери използвайте точка за разделител! (.)</li>
         </ul>
     </div>
 </div>
@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
        
         
         var formData = new FormData(form);
-        ///TASK CALCULATE
-        //formData.append('task', 'shedroofcalculator.calculate');
+
 
         // Get the token from the form
         var token = document.querySelector('input[name="' +  '<?php echo JSession::getFormToken(); ?>' + '"]');

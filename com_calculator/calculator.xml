@@ -21,6 +21,7 @@
 		<filename>calculator.php</filename>
 		<folder>controllers</folder>
 		<folder>views</folder>
+		<folder>helpers</folder>
 	</files>
 
 	<administration>
