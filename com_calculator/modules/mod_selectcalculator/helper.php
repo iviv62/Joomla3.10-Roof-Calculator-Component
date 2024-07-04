@@ -5,10 +5,13 @@ class ModSelectCalculatorHelper
 {
     public static function getButtons($params)
     {
+
+        $modulePath = JURI::base() . 'modules/mod_selectcalculator/images/';
+
         $buttons = array(
-            self::createButton('Shed roof calculator', 'index.php?option=com_calculator&view=shedroofcalculator'),
-            self::createButton('Calculator 2', 'index.php?option=com_calculator&view=view2'),
-            self::createButton('Calculator 3', 'index.php?option=com_calculator&view=view3')
+            self::createButton('Едноскатен покрив', 'index.php?option=com_calculator&view=shedroofcalculator',$modulePath."shed-roof.png" ),
+            self::createButton('Двускатен Покрив', 'index.php?option=com_calculator&view=view2',$modulePath."gable-roof.png" ),
+            self::createButton('Четирискатен Покрив', 'index.php?option=com_calculator&view=view3',$modulePath."hipped-roof.png" )
         );
       	
         return $buttons;
@@ -22,8 +25,15 @@ class ModSelectCalculatorHelper
      *
      * @return  string  The HTML for the button
      */
-    private static function createButton($text, $link)
+    private static function createButton($text, $link, $img)
     {
-        return '<a href="' . JRoute::_($link) . '" class="calculator-button me-2 mb-2">' . $text . '</a>';
+        return '
+        
+        <div class="roof-option">
+            <img src="'.$img.'" alt="'.$text.'">
+            <p>'.$text.'</p>
+            <a href="' . JRoute::_($link) . '" class="calculate-btn">' . $text . '</a>
+        </div>
+        ';
     }
 }

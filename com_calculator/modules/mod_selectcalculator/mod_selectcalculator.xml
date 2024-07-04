@@ -8,6 +8,7 @@
         <filename module="mod_selectcalculator">mod_selectcalculator.php</filename>
         <filename>helper.php</filename>
         <folder>tmpl</folder>
+        <folder>images</folder>
     </files>
     <config>
         <fields name="params">
