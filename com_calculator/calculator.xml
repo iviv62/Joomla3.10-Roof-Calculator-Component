@@ -40,4 +40,15 @@
 		</files>
 	</administration>
 
+	<modules>
+        <module folder="modules" module="mod_selectcalculator" name="MOD_SELECTCALCULATOR" />
+    </modules>
+
+	    <!-- Add this new section to include the modules folder -->
+	<files folder="modules">
+			<folder>mod_selectcalculator</folder>
+	</files>
+
+	<scriptfile>script.php</scriptfile>
+
 </extension>

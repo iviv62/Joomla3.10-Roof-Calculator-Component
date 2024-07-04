@@ -15,9 +15,11 @@ defined('_JEXEC') or die('Restricted access');
  */
 class CalculatorController extends JControllerLegacy
 {
+    protected $default_view = 'shedroofcalculator';
+
     public function display($cachable = false, $urlparams = false)
     {
-        $view = $this->input->get('view', 'calculator');
+        $view = $this->input->get('view', $this->default_view);
         $this->input->set('view', $view);
 
         parent::display($cachable, $urlparams);

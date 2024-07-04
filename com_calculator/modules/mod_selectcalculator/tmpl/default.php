@@ -44,10 +44,10 @@ $document->addStyleDeclaration('
 ?>
 
 
-<h1><?php echo $this->msg; ?></h1>
+
 
 <div class="calculator-container" role="group" aria-label="Calculator Views">
-    <?php foreach ($this->buttons as $button) : ?>
+    <?php foreach ($buttons as $button) : ?>
         <?php echo $button; ?>
     <?php endforeach; ?>
 </div>

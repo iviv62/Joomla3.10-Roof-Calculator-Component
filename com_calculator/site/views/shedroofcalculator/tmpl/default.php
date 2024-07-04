@@ -6,6 +6,7 @@ defined('_JEXEC') or die;
 
 <div class="form-container">
     <h2>Това е калкулатор за едноскатен покрив</h2>
+    {loadmoduleid 95}
     <h3 class="form-title">Размери на вашия покрив:</h3>
     <form id="roof-dimensions-form"  action="javascript:void(0);" >
         <div class="input-group">
