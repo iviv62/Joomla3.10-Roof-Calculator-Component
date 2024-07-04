@@ -5,7 +5,8 @@ class com_calculatorInstallerScript
 {
     private $modules = [
         'mod_selectcalculator',
-        'mod_shedcalculator'
+        'mod_shedcalculator',
+        'mod_gablecalculator'
     ];
 
     public function install($parent) 

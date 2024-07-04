@@ -43,6 +43,7 @@
 	<modules>
         <module folder="modules" module="mod_selectcalculator" name="MOD_SELECTCALCULATOR" />
 		<module folder="modules" module="mod_shedcalculator" name="MOD_SHEDCALCULATOR" />
+		<module folder="modules" module="mod_gablecalculator" name="MOD_GABLECALCULATOR" />
 		
     </modules>
 
@@ -50,7 +51,8 @@
 	<files folder="modules">
 			<folder>mod_selectcalculator</folder>
 			<folder>mod_shedcalculator</folder>
-			
+			<folder>mod_gablecalculator</folder>
+			<folder>mod_hipcalculator</folder>
 	</files>
 	<scriptfile>script.php</scriptfile>
 

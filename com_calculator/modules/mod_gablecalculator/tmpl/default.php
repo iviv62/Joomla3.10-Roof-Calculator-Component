@@ -4,7 +4,7 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="form-container">
-    <h2>Това е калкулатор за едноскатен покрив</h2>
+    <h2>Това е калкулатор за двускатен покрив</h2>
 
     <div class="info-container">
         <ul>
@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
         </ul>
     </div>
 
-    <h3 class="form-title">Размери на вашия покрив:</h3>
+    <h3 class="form-title">Въведи размерите на вашия покрив:</h3>
     <form id="roof-dimensions-form"  action="javascript:void(0);" >
         <div class="input-group">
             <label for="length">L</label>
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formData.append(token.name, token.value);
         
 
-        fetch('<?php echo JRoute::_('index.php?option=com_calculator&task=shedroofcalculator.calculate'); ?>', {
+        fetch('<?php echo JRoute::_('index.php?option=com_calculator&task=gableroofcalculator.calculate'); ?>', {
             method: 'POST',
             body: formData,
             headers: {

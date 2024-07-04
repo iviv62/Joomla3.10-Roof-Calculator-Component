@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Gable Roof Calculator</name>
+    <author>Ivelin Ivanov</author>
+    <version>1.0.0</version>
+    <description>A simple gable roof calculator module</description>
+    <files>
+        <filename module="mod_gablecalculator">mod_gablecalculator.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="Module Class Suffix"
+                    description="A suffix to be applied to the CSS class of the module"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
