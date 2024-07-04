@@ -10,8 +10,8 @@ class ModSelectCalculatorHelper
 
         $buttons = array(
             self::createButton('Едноскатен покрив', 'index.php?option=com_calculator&view=shedroofcalculator',$modulePath."shed-roof.png" ),
-            self::createButton('Двускатен Покрив', 'index.php?option=com_calculator&view=view2',$modulePath."gable-roof.png" ),
-            self::createButton('Четирискатен Покрив', 'index.php?option=com_calculator&view=view3',$modulePath."hipped-roof.png" )
+            self::createButton('Двускатен Покрив', 'index.php?option=com_calculator&view=gableroofcalculator',$modulePath."gable-roof.png" ),
+            self::createButton('Четирискатен Покрив', 'index.php?option=com_calculator&view=hiproofcalculator',$modulePath."hipped-roof.png" )
         );
       	
         return $buttons;
