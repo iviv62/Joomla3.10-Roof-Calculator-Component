@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_CALCULATOR_GABLEROOFCALCULATOR_VIEW_DEFAULT_TITLE">
+        <message>Gable Roof Calculator View</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request">
+            <field 
+                name="view"
+                type="hidden"
+                default="gableroofcalculator"
+            />
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <!-- Add any component-specific parameters here -->
+    </fields>
+</metadata>
