@@ -42,13 +42,14 @@
 
 	<modules>
         <module folder="modules" module="mod_selectcalculator" name="MOD_SELECTCALCULATOR" />
+		<module folder="modules" module="mod_shedcalculator" name="MOD_SHEDCALCULATOR" />
     </modules>
 
 	    <!-- Add this new section to include the modules folder -->
 	<files folder="modules">
 			<folder>mod_selectcalculator</folder>
+			<folder>mod_shedcalculator</folder>
 	</files>
-
 	<scriptfile>script.php</scriptfile>
 
 </extension>
