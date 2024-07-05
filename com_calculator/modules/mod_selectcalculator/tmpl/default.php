@@ -67,14 +67,20 @@ $document->addStyleDeclaration('
   text-decoration: none;
  
 }
+
+.title-calc{
+color: #ff2525;
+
 ');
 
-// Get the module path
-$modulePath = JURI::base() . 'modules/mod_yourmodulename/';
+
 ?>
 
-
+<div class="flex flex-col items-center title-calc">
+<h3>Калкулатори за площ на покрив</h3>
+</div>
 <div class="button-container" role="group" aria-label="Calculator Views">
+  
     <?php foreach ($buttons as $button) : ?>
         <?php echo $button; ?>
     <?php endforeach; ?>
