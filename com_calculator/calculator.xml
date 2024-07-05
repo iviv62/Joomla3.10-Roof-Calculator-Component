@@ -44,6 +44,7 @@
         <module folder="modules" module="mod_selectcalculator" name="MOD_SELECTCALCULATOR" />
 		<module folder="modules" module="mod_shedcalculator" name="MOD_SHEDCALCULATOR" />
 		<module folder="modules" module="mod_gablecalculator" name="MOD_GABLECALCULATOR" />
+		<module folder="modules" module="mod_hipcalculator" name="MOD_HIPCALCULATOR" />
 		
     </modules>
 
